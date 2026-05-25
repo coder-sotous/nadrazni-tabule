@@ -77,4 +77,5 @@ def main(page: ft.Page):
     )
 
 if __name__ == "__main__":
+    # Takhle se to spustí správně na serveru
     ft.app(target=main, view=ft.AppView.WEB_BROWSER)

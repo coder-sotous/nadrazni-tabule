@@ -409,4 +409,13 @@ async def main(page: ft.Page):
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8551))
-    ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=port, host="127.0.0.1")
+   
+    # TOTO JE KLÍČOVÉ: 
+    # view=ft.AppView.WEB_BROWSER zajistí, že se nic neotevírá v okně.
+    # host="0.0.0.0" zajistí, že server bude naslouchat externím požadavkům.
+    ft.app(
+        target=main, 
+        view=ft.AppView.WEB_BROWSER, 
+        port=port, 
+        host="0.0.0.0"
+    )

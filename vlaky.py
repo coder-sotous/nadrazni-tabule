@@ -408,7 +408,7 @@ async def main(page: ft.Page):
     page.run_task(blink_worker)
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8551))
+    port = int(os.getenv("PORT", 8550))
    
     # TOTO JE KLÍČOVÉ: 
     # view=ft.AppView.WEB_BROWSER zajistí, že se nic neotevírá v okně.
